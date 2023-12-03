@@ -1,0 +1,12 @@
+.workout-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .workout-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,55 @@
+.workout-item {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 55px -17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 55px -17px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 55px -17px rgba(0,0,0,0.75);
+    cursor: pointer;
+
+    & h5 {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 35px;
+    }
+    &__date {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        margin: 20px 0;
+        color: gray;
+    }
+    &__text {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+        width: 100%;
+        min-height: 100px;
+        border: none;
+        outline: none;
+        transition: all 0.5s ease;
+        &_open {
+            min-height: 400px;
+        }
+    }
+    &:active {
+        transform: scale(0.995);
+    }
+    & button {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    & button:hover {
+        border-radius: 50%;
+        background-color: rgb(219, 219, 219);
+    }
+}
