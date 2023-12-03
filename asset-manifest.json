@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/workout-diary/static/css/main.999b477d.css",
+    "main.js": "/workout-diary/static/js/main.97b62ec9.js",
+    "index.html": "/workout-diary/index.html",
+    "main.999b477d.css.map": "/workout-diary/static/css/main.999b477d.css.map",
+    "main.97b62ec9.js.map": "/workout-diary/static/js/main.97b62ec9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.999b477d.css",
+    "static/js/main.97b62ec9.js"
+  ]
+}
