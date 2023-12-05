@@ -1,21 +1,6 @@
 @import './reset';
-
-* {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  border-radius: 8px;
-  min-height: 100vh;
-  background-color: rgb(230, 230, 230);
-}
-
 @import './_common.scss';
+@import '../../components/main/main';
 @import '../../components/workout-item/workout-item';
 @import '../../components/input-form/input-form';
 @import '../../components/workout-list/workout-list';

@@ -1,12 +1,36 @@
 .workout-list {
+    position: relative;
+}
+
+.workout-list ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
 
+.workout-list nav {
+  background-color: rgba(177, 177, 177, 0.726);
+  padding: 10px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.workout-list__sort {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 768px) {
-    .workout-list {
+    .workout-list ul {
         grid-template-columns: 1fr;
         gap: 20px;
+        justify-content: center;
     }
 }

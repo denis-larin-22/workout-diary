@@ -1,5 +1,5 @@
 .input-form {
-    margin: 20px 0;
+    margin-bottom: 20px;
     border: 2px solid gray;
     border-radius: 12px;
     background-color: white;
@@ -12,23 +12,24 @@
     }
     & input,
     & textarea {
-        border: none;
-        outline: none;
         max-width: 100%;
-        font-size: 16px;
+        font-size: 1em;
         font-style: normal;
         font-weight: 400;
         line-height: 170%; 
     };
     & input {
         min-height: 25px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid gray;
         padding-bottom: 10px;
         font-weight: 600;
     }
     & textarea {
         max-height: 400px;
         min-height: 200px;
+        @media screen and (max-width: 768px) {
+            min-height: 120px;
+        }
     }
     & div {
         margin-top: 20px;
@@ -42,7 +43,20 @@
         color: gray;
     }
     & button {
+        padding: 5px 10px;
+        border-radius: 50px;
+        border: 1px solid gray;
+        background-color: rgb(63, 63, 63);
+        color: white;
         cursor: pointer;
-        padding: 10px 20px;
+        transition: all 0.3s ease;
+    }
+    & button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid gray;
+    }
+    & button:active {
+        transform: scale(0.98);
     }
 }

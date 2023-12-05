@@ -1,11 +1,8 @@
-import { useEffect, useState } from "react"
-import { auth } from "../../api/auth";
+import { useState } from "react"
 import { post } from "../../api/post";
 import { IWorkoutValue } from "../../api/types";
 
-export const InputForm = () => {
-    const [isVissible, setIsVissible] = useState(false);
-
+export const InputForm = ({ token, updateList }: { token: string, updateList: () => void }) => {
     const initInputValue: IWorkoutValue = {
         name: '',
         workout: '',
@@ -13,22 +10,20 @@ export const InputForm = () => {
     }
 
     const [inputValue, setInputValue] = useState(initInputValue);
-    const [token, setToken] = useState('');
 
-    useEffect(() => {
-        auth()
-            .then(result => setToken(result))
-            .catch(err => console.error(err))
-    }, [])
-
+    const saveHandler = () => {
+        post(token, inputValue);
+        setInputValue(initInputValue);
+        updateList();
+    }
 
     return (
         <div className="input-form">
-            <h2 className="">Add new workout</h2>
+            <h2 className="">Добавить тренировку</h2>
             <input
                 type="text"
                 className=""
-                placeholder="name"
+                placeholder="Группа мышц"
                 value={inputValue.name}
                 onChange={(e) => {
                     setInputValue({
@@ -38,7 +33,7 @@ export const InputForm = () => {
                 }}
             />
             <textarea
-                placeholder="workout"
+                placeholder="Тренировка"
                 value={inputValue.workout}
                 onChange={(e) => {
                     setInputValue({
@@ -59,7 +54,11 @@ export const InputForm = () => {
                         })
                     }}
                 />
-                <button className="" onClick={() => post(token, inputValue)}>Save</button>
+                {
+                    inputValue.name.length !== 0 &&
+                    inputValue.workout.length !== 0 &&
+                    <button onClick={() => saveHandler()}>Сохранить</button>
+                }
             </div>
         </div>
     )
