@@ -96,6 +96,19 @@ body {
     font-size: 1em;
   }
 }
+.main__header div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main__header button {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+}
+.main__header button:hover {
+  background-color: rgb(194, 194, 194);
+}
 .main p {
   text-transform: uppercase;
   color: gray;
