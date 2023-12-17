@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/workout-diary/static/css/main.d5ace57e.css",
-    "main.js": "/workout-diary/static/js/main.99d51fa5.js",
+    "main.css": "/workout-diary/static/css/main.a46e9b13.css",
+    "main.js": "/workout-diary/static/js/main.b65be6b9.js",
     "index.html": "/workout-diary/index.html",
-    "main.d5ace57e.css.map": "/workout-diary/static/css/main.d5ace57e.css.map",
-    "main.99d51fa5.js.map": "/workout-diary/static/js/main.99d51fa5.js.map"
+    "main.a46e9b13.css.map": "/workout-diary/static/css/main.a46e9b13.css.map",
+    "main.b65be6b9.js.map": "/workout-diary/static/js/main.b65be6b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5ace57e.css",
-    "static/js/main.99d51fa5.js"
+    "static/css/main.a46e9b13.css",
+    "static/js/main.b65be6b9.js"
   ]
 }
