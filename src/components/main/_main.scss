@@ -12,20 +12,21 @@
     &__header div {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
     &__header  button {
-        padding: 5px;
+        width: 28px;
+        height: 28px;
         cursor: pointer;
         border: none;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: 0.3s ease;
     }
 
     &__header button:hover {
-        background-color: rgb(194, 194, 194);
-    }
-    & p {
-        text-transform: uppercase;
-        color: gray;
+        background-color: #18333E;
+        fill: white;
     }
 }
 
@@ -80,6 +81,5 @@
 
     & button:active {
         transform: scale(0.98);
-    }
-    
+    }   
 }

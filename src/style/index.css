@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,8 +55,9 @@ textarea {
 }
 
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Baloo 2", sans-serif;
   box-sizing: border-box;
+  color: #18333E;
 }
 
 body {
@@ -71,7 +73,7 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .container {
@@ -80,7 +82,7 @@ body {
   min-height: 100vh;
   padding: 20px;
   margin: 0 auto;
-  background-color: rgb(230, 230, 230);
+  background-color: #F2F8FD;
   box-shadow: 0px 0px 55px -17px rgba(0, 0, 0, 0.75);
 }
 
@@ -99,19 +101,20 @@ body {
 .main__header div {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 .main__header button {
-  padding: 5px;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
   border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: 0.3s ease;
 }
 .main__header button:hover {
-  background-color: rgb(194, 194, 194);
-}
-.main p {
-  text-transform: uppercase;
-  color: gray;
+  background-color: #18333E;
+  fill: white;
 }
 
 .authorization {
@@ -178,7 +181,7 @@ body {
   line-height: 2.19em;
 }
 .workout-item__date {
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 400;
   line-height: normal;
   margin: 1.25em 0;
@@ -216,12 +219,12 @@ body {
   background-color: rgb(219, 219, 219);
 }
 .workout-item__save {
-  max-width: 250px;
-  text-transform: uppercase;
+  max-width: 120px;
   padding: 5px 10px;
-  border-radius: 50px;
-  border: 1px solid gray;
-  background-color: rgb(63, 63, 63);
+  border-radius: 30px;
+  border: 1px solid #18333E;
+  font-weight: 600;
+  background-color: #18333E;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -229,7 +232,7 @@ body {
 .workout-item__save:hover {
   background-color: white;
   color: black;
-  border: 1px solid gray;
+  border: 1px solid #18333E;
 }
 .workout-item__save:active {
   transform: scale(0.98);
@@ -282,10 +285,12 @@ body {
   color: gray;
 }
 .input-form button {
+  max-width: 120px;
   padding: 5px 10px;
-  border-radius: 50px;
-  border: 1px solid gray;
-  background-color: rgb(63, 63, 63);
+  border-radius: 30px;
+  border: 1px solid #18333E;
+  font-weight: 600;
+  background-color: #18333E;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -310,7 +315,7 @@ body {
 }
 
 .workout-list nav {
-  background-color: rgba(177, 177, 177, 0.726);
+  background-color: #E9F1FA;
   padding: 10px;
   border-radius: 14px;
   margin-bottom: 20px;
@@ -320,12 +325,13 @@ body {
 }
 
 .workout-list__sort {
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 0.9em;
+  font-weight: 400;
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  color: rgba(255, 255, 255, 0.822);
+  background-color: rgba(24, 51, 62, 0.8980392157);
 }
 
 @media screen and (max-width: 768px) {

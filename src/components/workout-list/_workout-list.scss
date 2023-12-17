@@ -9,22 +9,23 @@
 }
 
 .workout-list nav {
-  background-color: rgba(177, 177, 177, 0.726);
-  padding: 10px;
-  border-radius: 14px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+    background-color: #E9F1FA;
+    padding: 10px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .workout-list__sort {
-    padding: 5px 10px;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 0.9em;
+    font-weight: 400;
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    color: rgba(255, 255, 255, 0.822);
+    background-color: #18333ee5;
 }
 
 @media screen and (max-width: 768px) {

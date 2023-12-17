@@ -43,10 +43,12 @@
         color: gray;
     }
     & button {
+        max-width: 120px;
         padding: 5px 10px;
-        border-radius: 50px;
-        border: 1px solid gray;
-        background-color: rgb(63, 63, 63);
+        border-radius: 30px;
+        border: 1px solid #18333E;
+        font-weight: 600;
+        background-color: #18333E;
         color: white;
         cursor: pointer;
         transition: all 0.3s ease;

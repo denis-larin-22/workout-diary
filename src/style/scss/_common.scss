@@ -1,6 +1,7 @@
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Baloo 2', sans-serif;
   box-sizing: border-box;
+  color: #18333E;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 
 @media screen and (max-width: 768px) {
     body {
-      font-size: 10px;
+      font-size: 12px;
     }
 }
 
@@ -26,7 +27,7 @@ body {
     min-height: 100vh;
     padding: 20px;
     margin: 0 auto;
-    background-color: rgb(230, 230, 230);
+    background-color: #F2F8FD;
     -webkit-box-shadow: 0px 0px 55px -17px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 55px -17px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 55px -17px rgba(0,0,0,0.75);

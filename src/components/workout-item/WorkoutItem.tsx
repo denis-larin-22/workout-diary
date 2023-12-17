@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { IWorkoutValue } from '../../api/types';
 import '../../style/index.css';
-import { auth } from '../../api/auth';
 import { removeItem } from '../../api/remove';
 import { editItem } from '../../api/edit';
 
